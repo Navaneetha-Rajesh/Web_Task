@@ -12,6 +12,7 @@ import Schedule from './components/Schedule';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import EventModal from './components/EventModal';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -31,6 +32,9 @@ function App() {
 
   return (
     <div className="relative min-h-screen bg-space-black text-gray-100 selection:bg-cosmic-cyan selection:text-space-black">
+      {/* 0. Custom Spacey Sniper Cursor */}
+      <CustomCursor />
+
       {/* 1. Orbiting & Drifting Background Particle System */}
       <BackgroundEffects />
 

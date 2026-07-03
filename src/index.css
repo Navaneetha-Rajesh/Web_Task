@@ -96,3 +96,10 @@
 .bg-glow-cyan-radial {
   background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.1) 0%, transparent 60%);
 }
+
+/* Hide default cursor on desktop screens supporting hover mechanics */
+@media (hover: hover) and (pointer: fine) {
+  body, a, button, [role="button"], input, textarea, select, .cursor-pointer {
+    cursor: none !important;
+  }
+}
